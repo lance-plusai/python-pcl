@@ -521,7 +521,7 @@ else:
         os.environ['ARCHFLAGS'] = ''
 
     # Try to find PCL. XXX we should only do this when trying to build or install.
-    PCL_SUPPORTED = ["-1.7", ""]    # in order of preference
+    PCL_SUPPORTED = ["-1.8", ""]    # in order of preference
 
     for pcl_version in PCL_SUPPORTED:
         if subprocess.call(['pkg-config', 'pcl_common%s' % pcl_version]) == 0:
@@ -554,8 +554,8 @@ else:
     # ext_args['libraries'].append()
 
     # VTK use?
-    ext_args['include_dirs'].append('/usr/include/vtk-6.2')
-    # ext_args['include_dirs'].append('/usr/local/include/vtk-6.2')
+    # ext_args['include_dirs'].append('/usr/include/vtk-6.2')
+    ext_args['include_dirs'].append('/usr/local/include/vtk-6.2')
     # pcl 1.7(Ubuntu)
     # ext_args['include_dirs'].append('/usr/include/vtk-5.8')
     # ext_args['library_dirs'].append('/usr/lib')
