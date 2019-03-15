@@ -554,8 +554,8 @@ else:
     # ext_args['libraries'].append()
 
     # VTK use?
-    # ext_args['include_dirs'].append('/usr/include/vtk')
-    ext_args['include_dirs'].append('/usr/local/include/vtk-6.2')
+    ext_args['include_dirs'].append('/usr/include/vtk-6.2')
+    # ext_args['include_dirs'].append('/usr/local/include/vtk-6.2')
     # pcl 1.7(Ubuntu)
     # ext_args['include_dirs'].append('/usr/include/vtk-5.8')
     # ext_args['library_dirs'].append('/usr/lib')
